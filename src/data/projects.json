@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Wix Salesforce Integration",
+    "slug": "salesforce-integration",
+    "description": "A server-to-server OAuth integration of Salesforce to submit customer email notifications.  This was built with Wix and Node.js",
+    "image": "/images/projects/project-1.png",
+    "githubURL": "https://github.com/chadelofson/wix-salesforce",
+    "liveSiteURL": ""
+  },
+  {
+    "title": "Survey Totals",
+    "slug": "survey-totals",
+    "description": "A program that takes the survey totals and generates a CSV that has the raw survey data and the aggregated survey data. Built with Wix Blocks, Go, AWS s3 and AWS Lambda.",
+    "image": "/images/projects/project-2.png",
+    "githubURL": "https://github.com/chadelofson/goreportingapi",
+    "liveSiteURL": ""
+  }
+]

@@ -10,15 +10,18 @@ const cta = { text: 'View All', href: '/projects' }
 ---
 <Section dark={true}>
     <SectionHeader cta={cta} heading={heading} />
-
+    <div class="projects-container">
     {
       projects.map(project => (
       <div class="card">
-          <img src={project.data.image} alt={project.data.title} />
-          <h3><a href={project.data.liveSiteURL}>{project.data.title}</a></h3>
+          <a href={cta.href}>
+              <img src={project.data.image} alt={project.data.title} />
+              <h3>{project.data.title}</h3>
+          </a>
       </div>
       ))
     }
+    </div>
 </Section>
 
 <style>
@@ -32,6 +35,12 @@ const cta = { text: 'View All', href: '/projects' }
             transition: transform 0.3s;
             display: flex;
             flex-direction: column;
+        }
+
+        img {
+            height: 220px;
+            width: 310px;
+            object-fit: cover;
         }
 
         h3 {

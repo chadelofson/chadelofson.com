@@ -13,7 +13,9 @@ const projects = await getCollection('project')
         <h1>{heading}</h1>
         {projects.map(project => (
         <div class="card">
-            <img src={project.data.image} alt={project.data.title} />
+            <a href={`${project.data.githubURL}`} target="_blank">
+                <img src={project.data.image} alt={project.data.title} />
+            </a>
             <div>
                 <h3>{project.data.title}</h3>
                 <p class="description">{project.data.description}</p>
